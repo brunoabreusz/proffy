@@ -3,37 +3,54 @@ import React from 'react';
 import whatsappIcon from '../../assets/image/icons/whatsapp.svg';
 
 import './styles.css';
+import api from '../../services/api';
 
-function TeacherItem() {
+export interface Teacher {
+    id: number;
+    avatar: string;
+    bio: string;
+    cost: number;
+    name: string;
+    subject: string;
+    whatsapp: string;
+};
+
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+    
+    function createNewConnection(){
+        api.post('connections',{
+            user_id: teacher.id,
+        })
+    }
+
     return (
         <article className="teacher-item">
-        <header>
-            <img src="https://avatars3.githubusercontent.com/u/63884086?s=460&u=1c446ea8e01f4ff410f3fe8198d22eb3520ab6a8&v=4" alt="Bruno de Abreu"/>
-        <div>
-            <strong>Bruno A.</strong>
-            <span>Matematica</span>
-        </div>
-        </header>
+            <header>
+                <img src={teacher.avatar} alt={teacher.name} />
+                <div>
+                    <strong>{teacher.name}</strong>
+                    <span>{teacher.subject}</span>
+                </div>
+            </header>
 
-        <p>
-            Aulas de Matemática bem estruturadas e expositiva.
-            <br /> <br />
-            Estude para o ENEM e Vestibulares no Melhor Cursinho com o Melhor Preço.
-             Pague em até 12x. ENEM com a melhor preparação. Parcelas por menos de R$
-             150 reais.
-        </p>
+            <p>{teacher.bio}</p>
 
-        <footer>
-            <p>
-                Preço/hora
-                <strong>R$ 150,00</strong>
-            </p>
-            <button type="button">
-                <img src={whatsappIcon} alt="Whatsapp"/>
-            Entrar em contato
-            </button>
-        </footer>
-    </article>
+            <footer>
+                <p>
+                    Preço/hora
+                <strong>R$ {teacher.cost}</strong>
+                </p>
+                <a target="_blank" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`}>
+                    <img src={whatsappIcon} alt="Whatsapp" />
+                 Entrar em contato
+                </a>
+            </footer>
+        </article>
     )
 }
 
