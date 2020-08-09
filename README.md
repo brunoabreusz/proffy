@@ -1,4 +1,5 @@
-<img src="web\web\src\assets\README.md\logo.png">
+<img src="web/web/src/assets/README.md/logo.png">
+
 
 
 <h2>O Projeto Proffy é uma plataforma para conexão professores e aluno.</h2>
