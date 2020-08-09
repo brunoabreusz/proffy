@@ -16,8 +16,8 @@
 <h2>Design</h2>
 
 
-<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/preview-web.png" width="300px">
-<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/Formul%C3%A1rio.png" width="300px">
+<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/preview-web.png"/>
+<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/Formul%C3%A1rio.png"/>
 <br>
 
 
