@@ -1,4 +1,4 @@
-<img src="web/web/src/assets/README.md/logo.png">
+<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/Home.png">
 
 
 
@@ -16,11 +16,11 @@
 <h2>Design</h2>
 <h3>- Design feito por @Thiago Luchtenberg - Rocketseat</h3>
 
-<img src="web\web\src\assets\README.md\Home.png">
+<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/preview-web.png">
 <br>
-<img src="web\web\src\assets\README.md\preview-web.png">
+<img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/Formul%C3%A1rio.png">
 <br>
-<img src="web\web\src\assets\README.md\Formulário.png">
+
 
 <h2> Executar esse projeto no seu computador</h2>
 
