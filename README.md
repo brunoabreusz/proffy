@@ -14,7 +14,7 @@
 
 <hr>
 <h2>Design</h2>
-<h3>- Design feito por @Thiago Luchtenberg - Rocketseat</h3>
+<h3> Design feito por <p>Thiago Luchtenberg<p></h3>
 
 <img src="https://raw.githubusercontent.com/dxwebster/NLW2-Proffy/master/readme/preview-web.png">
 <br>
